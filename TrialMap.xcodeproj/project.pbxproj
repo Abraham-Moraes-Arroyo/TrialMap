@@ -14,6 +14,8 @@
 		85A195A22B9B6A91006B4675 /* TrialMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A195A12B9B6A91006B4675 /* TrialMapTests.swift */; };
 		85A195AC2B9B6A91006B4675 /* TrialMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A195AB2B9B6A91006B4675 /* TrialMapUITests.swift */; };
 		85A195AE2B9B6A91006B4675 /* TrialMapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A195AD2B9B6A91006B4675 /* TrialMapUITestsLaunchTests.swift */; };
+		85A195BB2B9B6DAE006B4675 /* number3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A195BA2B9B6DAE006B4675 /* number3.swift */; };
+		85A195BD2B9B6DB9006B4675 /* number2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A195BC2B9B6DB9006B4675 /* number2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		85A195A72B9B6A91006B4675 /* TrialMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrialMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85A195AB2B9B6A91006B4675 /* TrialMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialMapUITests.swift; sourceTree = "<group>"; };
 		85A195AD2B9B6A91006B4675 /* TrialMapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialMapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		85A195BA2B9B6DAE006B4675 /* number3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = number3.swift; sourceTree = "<group>"; };
+		85A195BC2B9B6DB9006B4675 /* number2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = number2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				85A195902B9B6A8F006B4675 /* TrialMapApp.swift */,
 				85A195922B9B6A8F006B4675 /* ContentView.swift */,
+				85A195BA2B9B6DAE006B4675 /* number3.swift */,
+				85A195BC2B9B6DB9006B4675 /* number2.swift */,
 				85A195942B9B6A91006B4675 /* Assets.xcassets */,
 				85A195962B9B6A91006B4675 /* Preview Content */,
 			);
@@ -257,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85A195BB2B9B6DAE006B4675 /* number3.swift in Sources */,
 				85A195932B9B6A8F006B4675 /* ContentView.swift in Sources */,
 				85A195912B9B6A8F006B4675 /* TrialMapApp.swift in Sources */,
+				85A195BD2B9B6DB9006B4675 /* number2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
