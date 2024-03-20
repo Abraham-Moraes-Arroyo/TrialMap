@@ -1,24 +1,26 @@
-//
-//  ContentView.swift
-//  TrialMap
-//
-//  Created by Abraham Morales Arroyo on 3/8/24.
-//
+import GoogleMapsUtils
 
-import SwiftUI
+class KML: NSObject {
+  private var mapView: GMSMapView!
 
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+  func renderKml() {
+    guard let path = Bundle.main.path(forResource: "KML_Sample", ofType: "kml") else {
+      print("Invalid path")
+      return
     }
-}
 
-#Preview {
-    ContentView()
+    let url = URL(fileURLWithPath: path)
+
+    let kmlParser = GMUKMLParser(url: url)
+    kmlParser.parse()
+
+    let renderer = GMUGeometryRenderer(
+      map: mapView,
+      geometries: kmlParser.placemarks,
+      styles: kmlParser.styles
+    )
+
+    renderer.render()
+  }
 }
+      
